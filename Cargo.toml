@@ -5,22 +5,16 @@ authors      = { workspace = true }
 edition      = { workspace = true }
 license      = { workspace = true }
 rust-version = { workspace = true }
-default-run  = "lapce"
 
 [dependencies]
-lapce-app   = { path = "./lapce-app" }
 lapce-proxy = { path = "./lapce-proxy" }
-
-[[bin]]
-name = "lapce"
-path = "lapce-app/src/bin/lapce.rs"
 
 [[bin]]
 name = "lapce-proxy"
 path = "lapce-proxy/src/bin/lapce-proxy.rs"
 
 [workspace]
-members = ["lapce-app", "lapce-proxy", "lapce-rpc", "lapce-core"]
+members = ["lapce-proxy", "lapce-rpc", "lapce-core"]
 
 [workspace.package]
 version      = "0.4.3"
