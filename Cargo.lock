@@ -4327,8 +4327,3 @@ dependencies = [
 name = "dpi"
 version = "0.1.1"
 source = "git+https://github.com/rust-windowing/winit?rev=ee245c569d65fdeacf705ee5eedb564508d10ebe#ee245c569d65fdeacf705ee5eedb564508d10ebe"
-
-[[patch.unused]]
-name = "lsp-types"
-version = "0.95.1"
-source = "git+https://github.com/tuan-ide/lsp-types?rev=feaa1e2ec80975c9dadd400a238ceacf071058e6#feaa1e2ec80975c9dadd400a238ceacf071058e6"
