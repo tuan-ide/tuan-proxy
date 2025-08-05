@@ -58,11 +58,11 @@ tempfile          = { version = "3.10.1" }
 thiserror         = { version = "1.0" }
 toml              = { version = "*" }
 toml_edit         = { version = "0.20.2", features = ["serde"] }
-url               = { version = "2.5.0" }
+url               = { version = "2.5.0", features = ["serde"] }
 zstd              = { version = "0.11.2" }                                                                         # follow same version wasmtime-cache in lockfile
 
-lsp-types = { version = "0.95.1", features = ["proposed"] }                                                  # not following semver, so should be locked to patch version updates only
-psp-types = { git = "https://github.com/lapce/psp-types", rev = "f7fea28f59e7b2d6faa1034a21679ad49b3524ad" }
+lsp-types = { git = "https://github.com/tuan-ide/lsp-types", rev = "3e6daee771d14db4094a554b8d03e29c310dfcbe", features = ["proposed"] }
+psp-types = { git = "https://github.com/tuan-ide/psp-types", rev = "5a74855d56a1127e33d77611a014d448717b94cc" }
 
 lapce-xi-rope = { version = "0.3.2", features = ["serde"] }
 
@@ -77,7 +77,7 @@ floem-editor-core = { git = "https://github.com/lapce/floem", rev = "2055dde9833
 
 [patch.crates-io]
 # Temporarily patch lsp-types with a version that adds message-type debug
-lsp-types = { git = "https://github.com/lapce/lsp-types", rev = "feaa1e2ec80975c9dadd400a238ceacf071058e6" }
+lsp-types = { git = "https://github.com/tuan-ide/lsp-types", rev = "feaa1e2ec80975c9dadd400a238ceacf071058e6" }
 regalloc2 = { rev = "5d79e12d0a93b10fc181f4da409b4671dd365228", git = "https://github.com/bytecodealliance/regalloc2" }
 
 # cargo vendor issue: https://github.com/rust-lang/cargo/issues/10310
